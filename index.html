@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Kawaiicon</title>
+  <meta name="description" content="Infosec, but cuter.">
+  <meta name="theme-color" content="#000000"/>
+  <link rel="canonical" href="https://kawaiicon.org/">
+  <link rel="icon" type="image/png" href="/images/icons/icon-512x512.png" />
+
+  <link rel="stylesheet" href="/main.css">
+  <script src="/index.js"></script>
+  <script src="/sw.js"></script>
+</head>
+
+  <body class="bg-black">
+    <div class="mobile md:hidden flex flex-1 flex-col relative overflow-x-hidden">
+      <div class="bg-khaki flex flex-col">
+  <div class="flex flex-row">
+    <button id="mobile-nav-toggle" type="button" class="absolute mt-1 inline-flex items-center justify-center p-2 text-black" aria-controls="mobile-menu" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg id="open-menu" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg id="close-menu" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <a href="/" class="w-full flex items-center justify-center"><img src="/images/logo.svg" class="logo" /></a>
+  </div>
+
+  <nav id="mobile-nav" role="navigation" class="w-full h-full hidden">
+    <ul class="w-full absolute">
+      
+      <li class="transition uppercase text-center font-button shadow-inner h-16 bg-khaki text-black hover:bg-cream-dark hover:text-black">
+        <a class="block h-full w-full flex items-center justify-center" href="/about">About</a>
+      </li>
+      
+      <li class="transition uppercase text-center font-button shadow-inner h-16 bg-khaki text-black hover:bg-cream-dark hover:text-black">
+        <a class="block h-full w-full flex items-center justify-center" href="/cfp">CFP</a>
+      </li>
+      
+      <li class="transition uppercase text-center font-button shadow-inner h-16 bg-khaki text-black hover:bg-cream-dark hover:text-black">
+        <a class="block h-full w-full flex items-center justify-center" href="/code-of-conduct">Code of Conduct</a>
+      </li>
+      
+      <li class="transition uppercase text-center font-button shadow-inner h-16 bg-khaki text-black hover:bg-cream-dark hover:text-black">
+        <a class="block h-full w-full flex items-center justify-center" href="/con-events">Con Events</a>
+      </li>
+      
+      <li class="transition uppercase text-center font-button shadow-inner h-16 bg-khaki text-black hover:bg-cream-dark hover:text-black">
+        <a class="block h-full w-full flex items-center justify-center" href="/contact">Contact</a>
+      </li>
+      
+      <li class="transition uppercase text-center font-button shadow-inner h-16 bg-khaki text-black hover:bg-cream-dark hover:text-black">
+        <a class="block h-full w-full flex items-center justify-center" href="/covid">COVID</a>
+      </li>
+      
+      <li class="transition uppercase text-center font-button shadow-inner h-16 bg-khaki text-black hover:bg-cream-dark hover:text-black">
+        <a class="block h-full w-full flex items-center justify-center" href="/crue">Crue</a>
+      </li>
+      
+      <li class="transition uppercase text-center font-button shadow-inner h-16 bg-khaki text-black hover:bg-cream-dark hover:text-black">
+        <a class="block h-full w-full flex items-center justify-center" href="/expect">What to Expect</a>
+      </li>
+      
+      <li class="transition uppercase text-center font-button shadow-inner h-16 bg-khaki text-black hover:bg-cream-dark hover:text-black">
+        <a class="block h-full w-full flex items-center justify-center" href="/faq">FAQ</a>
+      </li>
+      
+      <li class="transition uppercase text-center font-button shadow-inner h-16 bg-khaki text-black hover:bg-cream-dark hover:text-black">
+        <a class="block h-full w-full flex items-center justify-center" href="/sponsors">Sponsors</a>
+      </li>
+      
+    </ul>
+  </nav>
+</div>
+
+      <div id="mobile-layout-target"></div>
+    </div>
+
+    <div class="desktop hidden md:block absolute console-container">
+      <img src="/images/dsky.svg" class="dsky" alt="Background Image" />
+      <a href="/"><img src="/images/logo.svg" class="logo" alt="Link to Home" /></a>
+
+      <div class="console-inner flex flex-col">
+        <div class="flex flex-row mb-20">
+          <nav role="navigation" class="w-1/2 h-full">
+            <div class="w-full">
+  <ul class="grid grid-cols-2 gap-4 px-6">
+    
+    <li class="transition uppercase text-center font-button p-2 shadow-inner h-20 bg-cream-light hover:bg-cream-dark rounded-sm">
+      <a class="block h-full w-full flex items-center justify-center" href="/about">About</a>
+    </li>
+    
+    <li class="transition uppercase text-center font-button p-2 shadow-inner h-20 bg-cream-light hover:bg-cream-dark rounded-sm">
+      <a class="block h-full w-full flex items-center justify-center" href="/cfp">CFP</a>
+    </li>
+    
+    <li class="transition uppercase text-center font-button p-2 shadow-inner h-20 bg-cream-light hover:bg-cream-dark rounded-sm">
+      <a class="block h-full w-full flex items-center justify-center" href="/code-of-conduct">Code of Conduct</a>
+    </li>
+    
+    <li class="transition uppercase text-center font-button p-2 shadow-inner h-20 bg-cream-light hover:bg-cream-dark rounded-sm">
+      <a class="block h-full w-full flex items-center justify-center" href="/con-events">Con Events</a>
+    </li>
+    
+    <li class="transition uppercase text-center font-button p-2 shadow-inner h-20 bg-cream-light hover:bg-cream-dark rounded-sm">
+      <a class="block h-full w-full flex items-center justify-center" href="/contact">Contact</a>
+    </li>
+    
+    <li class="transition uppercase text-center font-button p-2 shadow-inner h-20 bg-cream-light hover:bg-cream-dark rounded-sm">
+      <a class="block h-full w-full flex items-center justify-center" href="/covid">COVID</a>
+    </li>
+    
+    <li class="transition uppercase text-center font-button p-2 shadow-inner h-20 bg-cream-light hover:bg-cream-dark rounded-sm">
+      <a class="block h-full w-full flex items-center justify-center" href="/crue">Crue</a>
+    </li>
+    
+    <li class="transition uppercase text-center font-button p-2 shadow-inner h-20 bg-cream-light hover:bg-cream-dark rounded-sm">
+      <a class="block h-full w-full flex items-center justify-center" href="/expect">What to Expect</a>
+    </li>
+    
+    <li class="transition uppercase text-center font-button p-2 shadow-inner h-20 bg-cream-light hover:bg-cream-dark rounded-sm">
+      <a class="block h-full w-full flex items-center justify-center" href="/faq">FAQ</a>
+    </li>
+    
+    <li class="transition uppercase text-center font-button p-2 shadow-inner h-20 bg-cream-light hover:bg-cream-dark rounded-sm">
+      <a class="block h-full w-full flex items-center justify-center" href="/sponsors">Sponsors</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </nav>
+          <div id="full-layout-target" class="w-full h-full">
+            <main id="main" class="rounded-xs color-khaki bg-black w-full auto p-5 overflow-y-scroll">
+              <h1 class="font-mono text-6xl md:text-8xl text-khaki">Welcome to Kawaiicon 2021!</h1>
+<hr />
+
+<h2 class="subheading text-xl md:text-2xl">Kawaiicon comes to town November 12-13, 2021</h2>
+<hr />
+
+<p>Confused? Got a question? What’s a hacker anyway? <a href="/faq/">Ask the FAQ</a>.</p>
+<p>We have and enforce a Code of Conduct. <a href="/code-of-conduct/">You should read it</a>.</p>
+<p>Looking for one of the <a href="/about/#previous-cons">previous Kiwicons</a>?</p>
+<p>Need something else? <a href="/contact/">Contact us</a>.</p>
+
+<p>Follow us <a href="https://twitter.com/kawaiiconNZ">on Twitter at @kawaiiconNZ</a>!</p>
+
+            </main>
+          </div>
+        </div>
+        <div class="w-4/5 mx-auto hidden grid-cols-6 gap-4 md:grid">
+  <div class="grid grid-cols-1 grid-rows-4 gap-4 col-span-1">
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 row-start-2 hover:bg-darkgrey hover:shadow-inner">?</button>
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 row-start-3 hover:bg-darkgrey hover:shadow-inner">?</button>
+  </div>
+  
+  <div class="grid grid-cols-4 gap-4 col-span-4">
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 hover:bg-darkgrey hover:shadow-inner">''</button>
+    
+  </div>
+  <div class="grid grid-cols-1 grid-rows-4 gap-4 col-span-1">
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 row-start-2 hover:bg-darkgrey hover:shadow-inner">?</button>
+    <button class="bg-black rounded-sm font-button text-cream text-uppercase p-4 row-start-3 hover:bg-darkgrey hover:shadow-inner">?</button>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </body>
+</html>
