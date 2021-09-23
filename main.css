@@ -24378,23 +24378,27 @@ video {
 }
 @font-face {
   font-display: swap;
-  font-family: VT323;
-  src: url(assets/fonts/VT323-Regular.ttf);
+  font-family: 'VT323';
+  src: url('assets/fonts/vt323-regular.woff2') format('woff2'),
+       url('assets/fonts/vt323-regular.woff') format('woff');
 }
 @font-face {
   font-display: swap;
   font-family: Gorton Condensed;
-  src: url(assets/fonts/Gorton-Condensed.otf);
+  src: url('assets/fonts/gorton-condensed.woff2') format('woff2'),
+       url('assets/fonts/gorton-condensed.woff') format('woff');
 }
 @font-face {
   font-display: swap;
   font-family: Aileron Regular;
-  src: url(assets/fonts/Aileron-Regular.otf);
+  src: url('assets/fonts/aileron-regular.woff2') format('woff2'),
+       url('assets/fonts/aileron-regular.woff') format('woff');
 }
 @font-face {
   font-display: swap;
   font-family: Aileron Black;
-  src: url(assets/fonts/Aileron-Black.otf);
+  src: url('assets/fonts/aileron-black.woff2') format('woff2'),
+       url('assets/fonts/aileron-black.woff') format('woff');
 }
 body {
   background: #000;
