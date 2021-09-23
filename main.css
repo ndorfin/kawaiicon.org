@@ -24374,27 +24374,27 @@ video {
 @font-face {
   font-display: swap;
   font-family: League Gothic;
-  src: url(../assets/fonts/LeagueGothic-Regular.otf);
+  src: url(assets/fonts/LeagueGothic-Regular.otf);
 }
 @font-face {
   font-display: swap;
   font-family: VT323;
-  src: url(../assets/fonts/VT323-Regular.ttf);
+  src: url(assets/fonts/VT323-Regular.ttf);
 }
 @font-face {
   font-display: swap;
   font-family: Gorton Condensed;
-  src: url(../assets/fonts/Gorton-Condensed.otf);
+  src: url(assets/fonts/Gorton-Condensed.otf);
 }
 @font-face {
   font-display: swap;
   font-family: Aileron Regular;
-  src: url(../assets/fonts/Aileron-Regular.otf);
+  src: url(assets/fonts/Aileron-Regular.otf);
 }
 @font-face {
   font-display: swap;
   font-family: Aileron Black;
-  src: url(../assets/fonts/Aileron-Black.otf);
+  src: url(assets/fonts/Aileron-Black.otf);
 }
 body {
   background: #000;
